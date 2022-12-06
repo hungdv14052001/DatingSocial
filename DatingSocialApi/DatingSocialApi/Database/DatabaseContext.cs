@@ -13,6 +13,18 @@ namespace DatingSocialApi.Database
         public DbSet<User> users { get; set; }
         #endregion
 
+        #region LikePost
+        public DbSet<LikePost> like_posts { get; set; }
+        #endregion
+
+        #region Post
+        public DbSet<Post> posts { get; set; }
+        #endregion
+
+        #region ReviewPost
+        public DbSet<ReviewPost> review_posts { get; set; }
+        #endregion
+
         public static void UpdateDatabase(DatabaseContext context)
         {
             context.Database.Migrate();
@@ -22,7 +34,7 @@ namespace DatingSocialApi.Database
         {
             if (!optionsBuilder.IsConfigured)
             {
-                var sqlConnection = "Server=localhost;Port=3306;Database=movie_ticket;Uid=root;Pwd=1234$;MaximumPoolSize=500;";
+                var sqlConnection = "Server=localhost;Port=3306;Database=dating_social;Uid=root;Pwd=1234$;MaximumPoolSize=500;";
                 optionsBuilder.UseMySql(sqlConnection,
                     MySqlServerVersion.LatestSupportedServerVersion);
             }
@@ -32,6 +44,10 @@ namespace DatingSocialApi.Database
         {
             #region User
             new UserSeeder(modelBuilder).SeedData();
+            #endregion
+
+            #region Post
+            new PostSeeder(modelBuilder).SeedData();
             #endregion
 
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(DatabaseContext).Assembly);

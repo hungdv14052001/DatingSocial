@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Code\\Project\\ptpm_phan_tan\\DatingSocail\\DatingSocialApi\\DatingSocialApi\\DatingSocialApi.csproj": {}
+    "D:\\Code\\Project\\ptpm_phan_tan\\api\\DatingSocialApi\\DatingSocialApi\\DatingSocialApi.csproj": {}
   },
   "projects": {
-    "D:\\Code\\Project\\ptpm_phan_tan\\DatingSocail\\DatingSocialApi\\DatingSocialApi\\DatingSocialApi.csproj": {
+    "D:\\Code\\Project\\ptpm_phan_tan\\api\\DatingSocialApi\\DatingSocialApi\\DatingSocialApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Code\\Project\\ptpm_phan_tan\\DatingSocail\\DatingSocialApi\\DatingSocialApi\\DatingSocialApi.csproj",
+        "projectUniqueName": "D:\\Code\\Project\\ptpm_phan_tan\\api\\DatingSocialApi\\DatingSocialApi\\DatingSocialApi.csproj",
         "projectName": "DatingSocialApi",
-        "projectPath": "D:\\Code\\Project\\ptpm_phan_tan\\DatingSocail\\DatingSocialApi\\DatingSocialApi\\DatingSocialApi.csproj",
+        "projectPath": "D:\\Code\\Project\\ptpm_phan_tan\\api\\DatingSocialApi\\DatingSocialApi\\DatingSocialApi.csproj",
         "packagesPath": "C:\\Users\\Dang Van Hung\\.nuget\\packages\\",
-        "outputPath": "D:\\Code\\Project\\ptpm_phan_tan\\DatingSocail\\DatingSocialApi\\DatingSocialApi\\obj\\",
+        "outputPath": "D:\\Code\\Project\\ptpm_phan_tan\\api\\DatingSocialApi\\DatingSocialApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

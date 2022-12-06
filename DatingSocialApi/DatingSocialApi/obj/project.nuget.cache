@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bMfy666JtEId0Zh5K3CljU1asYJuyp9uLGDgq+RXDBH7zFTJjRdZSTkBQ5YcNAFnhR14kDdeHhsvsKDpIhV15g==",
+  "dgSpecHash": "kK0m/uxBUfWQar+ACYYyaKf2oK+YDuDShgvBzpulKjgOqXoaHUkmy9Sys5TF8jhjYxMRB+whk3xPEq4QJUCpbA==",
   "success": true,
-  "projectFilePath": "D:\\Code\\Project\\ptpm_phan_tan\\DatingSocail\\DatingSocialApi\\DatingSocialApi\\DatingSocialApi.csproj",
+  "projectFilePath": "D:\\Code\\Project\\ptpm_phan_tan\\api\\DatingSocialApi\\DatingSocialApi\\DatingSocialApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dang Van Hung\\.nuget\\packages\\automapper\\8.0.0\\automapper.8.0.0.nupkg.sha512",
     "C:\\Users\\Dang Van Hung\\.nuget\\packages\\automapper.collection\\5.0.0\\automapper.collection.5.0.0.nupkg.sha512",

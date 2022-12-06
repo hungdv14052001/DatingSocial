@@ -24,16 +24,10 @@ namespace DatingSocialApi.Seeder
                     Name = "Đặng Văn Hùng",
                     Username = "dangvanhung@gmail.com",
                     Password = Untill.CreateMD5("dangvanhung"),
+                    Avatar = "avatar/hung-avatar.jpg",
                     Role = "User"
-                },
-                new User
-                {
-                    Id = 2,
-                    Name = "Admin",
-                    Username = "Admin@gmail.com",
-                    Password = Untill.CreateMD5("Admin"),
-                    Role = "User"
-                });
+                }
+                );
         }
     }
 }

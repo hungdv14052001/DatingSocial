@@ -143,6 +143,20 @@ namespace DatingSocialApi
             {
                 endpoints.MapControllers();
             });
+
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.DefaultModelsExpandDepth(-1);
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "HotelOrderApi v1");
+                //
+                c.DocumentTitle = "HotelOrderApi.API";
+                c.RoutePrefix = string.Empty;
+            });
         }
     }
 }

@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DatingSocialApi</name>
+    </assembly>
+    <members>
+        <member name="M:DatingSocialApi.Common.Untill.CreateMD5(System.String)">
+            <summary>
+            Information encryption
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatingSocialApi.Controllers.UserAuthenticateController.UserLogin(DatingSocialApi.Request.UserLoginRequest)">
+            <summary>
+            Get achievement list of user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DatingSocialApi.Controllers.UserInformationController.GetProfile(System.Int32)">
+            <summary>
+            Get achievement list of user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DatingSocialApi.Controllers.UserInformationController.GetPostListByUser(System.Int32)">
+            <summary>
+            Get achievement list of user
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DatingSocialApi.Respositories.BaseRespository`1.FindAll" -->
+        <!-- Badly formed XML comment ignored for member "M:DatingSocialApi.Respositories.BaseRespository`1.FindByCondition(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})" -->
+        <member name="M:DatingSocialApi.Respositories.BaseRespository`1.CountByConditionAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+                count record of repository by Condition
+            </summary>
+            <param name="expression">Condition</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:DatingSocialApi.Respositories.BaseRespository`1.FindOrFail(System.Object)">
+            <summary>
+                Find data by id
+            </summary>
+            <param name="id">Table's primary key</param>
+            <returns>Object</returns>
+        </member>
+        <member name="M:DatingSocialApi.Respositories.BaseRespository`1.FindOrFailByCondition(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+                Find data by id
+            </summary>
+            <param name="id">Table's primary key</param>
+            <returns>Object</returns>
+        </member>
+        <member name="M:DatingSocialApi.Respositories.BaseRespository`1.Create(`0)">
+            <summary>
+                Save a new entity in repository
+            </summary>
+            <param name="entity">Entity</param>
+            <returns>Object</returns>
+        </member>
+        <member name="M:DatingSocialApi.Respositories.BaseRespository`1.UpdateByEntity(`0)">
+            <summary>
+                Update a entity in repository by entity
+            </summary>
+            <param name="entity">Entity</param>
+            <returns>T</returns>
+        </member>
+        <member name="M:DatingSocialApi.Respositories.BaseRespository`1.UpdateByEntityList(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+                Update list entity in repository by entity
+            </summary>
+            <param name="entity">Entity</param>
+            <returns>T</returns>
+        </member>
+        <member name="M:DatingSocialApi.Respositories.BaseRespository`1.DeleteByEntity(`0)">
+            <summary>
+               Delete a entity in repository by entity
+            </summary>
+            <param name="entity">Entity</param>
+            <returns>Bool</returns>
+        </member>
+        <member name="M:DatingSocialApi.Respositories.BaseRespository`1.ReadAllLimit(System.Int32,System.Int32,System.Func{System.Linq.IQueryable{`0},System.Linq.IOrderedQueryable{`0}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            
+            </summary>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <param name="orderBy"></param>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatingSocialApi.Respositories.BaseRespository`1.InsertBulk(System.Collections.Generic.List{`0})">
+            <summary>
+            
+            </summary>
+            <param name="listobject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatingSocialApi.Respositories.BaseRespository`1.UpdateBulk(System.Collections.Generic.List{`0})">
+            <summary>
+            
+            </summary>
+            <param name="listobject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatingSocialApi.Respositories.BaseRespository`1.SaveChange">
+            <summary>
+                Save change to database
+            </summary>
+        </member>
+        <member name="M:DatingSocialApi.Respositories.BaseRespository`1.UpdateRange(System.Collections.Generic.List{`0})">
+            <summary>
+            Update Range
+            </summary>
+            <param name="range"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DatingSocialApi.Respositories.IRespositoryBase`1.FindAll" -->
+        <!-- Badly formed XML comment ignored for member "M:DatingSocialApi.Respositories.IRespositoryBase`1.FindByCondition(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})" -->
+        <member name="M:DatingSocialApi.Respositories.IRespositoryBase`1.FindOrFail(System.Object)">
+            <summary>
+                Find data by id
+            </summary>
+            <param name="id">Table's primary key</param>
+            <returns>Object</returns>
+        </member>
+        <member name="M:DatingSocialApi.Respositories.IRespositoryBase`1.Create(`0)">
+            <summary>
+                Save a new entity in repository
+            </summary>
+            <param name="entity">Entity</param>
+            <returns>Object</returns>
+        </member>
+        <member name="M:DatingSocialApi.Respositories.IRespositoryBase`1.UpdateByEntity(`0)">
+            <summary>
+                Update a entity in repository by entity
+            </summary>
+            <param name="entity">Entity</param>
+            <returns>T</returns>
+        </member>
+        <member name="M:DatingSocialApi.Respositories.IRespositoryBase`1.DeleteByEntity(`0)">
+            <summary>
+               Delete a entity in repository by entity
+            </summary>
+            <param name="entity">Entity</param>
+            <returns>Bool</returns>
+        </member>
+        <member name="M:DatingSocialApi.Repositories.UserRepository.UserLogin(DatingSocialApi.Request.UserLoginRequest)">
+            <summary>
+            UserLogin function. That return User by user login request
+            </summary>
+            <param name="userLoginRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatingSocialApi.Repositories.UserRepository.CheckUserRegister(DatingSocialApi.Models.User)">
+            <summary>
+            Check user register
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatingSocialApi.Seeder.PostSeeder.SeedData">
+            <summary>
+            Excute data
+            </summary>
+        </member>
+        <member name="M:DatingSocialApi.Seeder.UserSeeder.SeedData">
+            <summary>
+            Excute data
+            </summary>
+        </member>
+        <member name="M:DatingSocialApi.Services.UserAuthenticateService.UserLogin(DatingSocialApi.Request.UserLoginRequest)">
+            <summary>
+            User login
+            </summary>
+            <param name="userLoginRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatingSocialApi.Services.UserAuthenticateService.AdminLogin(DatingSocialApi.Request.UserLoginRequest)">
+            <summary>
+            Admin login
+            </summary>
+            <param name="userLoginRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatingSocialApi.Services.UserAuthenticateService.UserRegister(DatingSocialApi.Request.UserRegisterRequest)">
+            <summary>
+            user register account
+            </summary>
+            <param name="userRegisterRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatingSocialApi.Services.UserInformationService.GetProfile(System.Int32)">
+            <summary>
+            Get profile of user
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DatingSocialApi.Services.UserInformationService.GetPostListByUser(System.Int32)">
+            <summary>
+            Get post list of user
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
