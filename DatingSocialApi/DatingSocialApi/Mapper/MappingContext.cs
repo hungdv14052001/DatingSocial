@@ -11,6 +11,9 @@ namespace DatingSocialApi.Mapper
         {
             // user request
             CreateMap<UserRegisterRequest, User>();
+
+            // postDto
+            CreateMap<Post, PostDto>();
         }
     }
 }

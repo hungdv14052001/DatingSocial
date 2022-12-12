@@ -46,7 +46,7 @@ namespace DatingSocialApi.Controllers
         }
 
         /// <summary>
-        /// Get achievement list of user
+        /// Get post list of user
         /// </summary>
         /// <returns></returns>
         [HttpGet]
@@ -56,6 +56,25 @@ namespace DatingSocialApi.Controllers
             try
             {
                 var res = _userInformationService.GetPostListByUser(userId);
+                return new MessageData { Data = res };
+            }
+            catch (Exception ex)
+            {
+                return new MessageData() { Code = "error", Des = ex.Message };
+            }
+        }
+
+        /// <summary>
+        /// Get friend list
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("GetFriendList")]
+        public MessageData GetFriendList(int userId)
+        {
+            try
+            {
+                var res = _userInformationService.GetFriendList(userId);
                 return new MessageData { Data = res };
             }
             catch (Exception ex)

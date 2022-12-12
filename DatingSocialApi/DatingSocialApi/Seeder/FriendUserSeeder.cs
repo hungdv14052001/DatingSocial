@@ -4,10 +4,10 @@ using DatingSocialApi.Common;
 
 namespace DatingSocialApi.Seeder
 {
-    class PostSeeder
+    class FriendUserSeeder
     {
         private readonly ModelBuilder _modelBuilder;
-        public PostSeeder(ModelBuilder modelBuilder)
+        public FriendUserSeeder(ModelBuilder modelBuilder)
         {
             _modelBuilder = modelBuilder;
         }
@@ -17,22 +17,18 @@ namespace DatingSocialApi.Seeder
         /// </summary>
         public void SeedData()
         {
-            _modelBuilder.Entity<Post>().HasData(
-                new Post
+            _modelBuilder.Entity<FriendUser>().HasData(
+                new FriendUser
                 {
                     Id = 1,
                     UserId = 1,
-                    Title = "Cảnh đẹp :))",
-                    Image = "post/post-1-1.jpg",
-                    NumberLike = 0,
+                    FriendId = 2,
                 },
-                new Post
+                new FriendUser
                 {
                     Id = 2,
                     UserId = 2,
-                    Title = "Dàn máy mới",
-                    Image = "post/post-2-1.jpg",
-                    NumberLike = 0,
+                    FriendId = 1,
                 }
                 );
         }

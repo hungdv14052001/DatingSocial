@@ -6,6 +6,7 @@ using DatingSocialApi.Request;
 using DatingSocialApi.Respositories;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace DatingSocialApi.Repositories
@@ -53,6 +54,23 @@ namespace DatingSocialApi.Repositories
                 return true;
             }
             catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        /// <summary>
+        /// Get user list by userId list
+        /// </summary>
+        /// <param name="userIdList"></param>
+        /// <returns></returns>
+        public List<User> GetUserListByUserIdList(List<int> userIdList)
+        {
+            try
+            {
+                return Model.Where(row => userIdList.Contains(row.Id)).ToList();
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }

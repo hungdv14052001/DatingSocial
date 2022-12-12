@@ -21,10 +21,13 @@ namespace DatingSocialApi.Services
     {
         private readonly UserRepository _userRepository;
         private readonly PostRepository _postRepository;
+        private readonly FriendUserRepository _friendUserRepository;
+
         public UserInformationService(ApiOption apiOption, DatabaseContext databaseContext, IMapper mapper)
         {
             _userRepository = new UserRepository(apiOption, databaseContext, mapper);
             _postRepository = new PostRepository(apiOption, databaseContext, mapper);
+            _friendUserRepository = new FriendUserRepository(apiOption, databaseContext, mapper);
         }
 
         /// <summary>
@@ -69,6 +72,24 @@ namespace DatingSocialApi.Services
                 return postList;
             }
             catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        /// <summary>
+        /// Get friend list
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        public List<User> GetFriendList(int userId)
+        {
+            try
+            {
+                var friendIdList = _friendUserRepository.GetFriendIdList(userId);
+                return _userRepository.GetUserListByUserIdList(friendIdList);
+            }
+            catch(Exception ex)
             {
                 throw ex;
             }
