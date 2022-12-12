@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "dating_social_app",
+            "cwd": "dating_social_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "dating_social_app (profile mode)",
+            "cwd": "dating_social_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "dating_social_app (release mode)",
+            "cwd": "dating_social_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
