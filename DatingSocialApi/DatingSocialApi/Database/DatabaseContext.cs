@@ -25,6 +25,10 @@ namespace DatingSocialApi.Database
         public DbSet<ReviewPost> review_posts { get; set; }
         #endregion
 
+        #region FriendUser
+        public DbSet<FriendUser> friend_users { get; set; }
+        #endregion
+
         public static void UpdateDatabase(DatabaseContext context)
         {
             context.Database.Migrate();
@@ -48,6 +52,10 @@ namespace DatingSocialApi.Database
 
             #region Post
             new PostSeeder(modelBuilder).SeedData();
+            #endregion
+
+            #region FriendUser
+            new FriendUserSeeder(modelBuilder).SeedData();
             #endregion
 
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(DatabaseContext).Assembly);

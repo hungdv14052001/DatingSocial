@@ -17,6 +17,47 @@ namespace DatingSocialApi.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 64)
                 .HasAnnotation("ProductVersion", "5.0.17");
 
+            modelBuilder.Entity("DatingSocialApi.Models.FriendUser", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("FriendId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("friend_users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedDate = new DateTime(2022, 12, 12, 4, 39, 49, 246, DateTimeKind.Utc).AddTicks(5748),
+                            FriendId = 2,
+                            UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedDate = new DateTime(2022, 12, 12, 4, 39, 49, 246, DateTimeKind.Utc).AddTicks(6442),
+                            FriendId = 1,
+                            UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserId = 2
+                        });
+                });
+
             modelBuilder.Entity("DatingSocialApi.Models.LikePost", b =>
                 {
                     b.Property<int>("Id")
@@ -72,12 +113,22 @@ namespace DatingSocialApi.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2022, 12, 6, 4, 17, 4, 434, DateTimeKind.Utc).AddTicks(3003),
+                            CreatedDate = new DateTime(2022, 12, 12, 4, 39, 49, 246, DateTimeKind.Utc).AddTicks(2507),
                             Image = "post/post-1-1.jpg",
                             NumberLike = 0,
                             Title = "Cảnh đẹp :))",
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             UserId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedDate = new DateTime(2022, 12, 12, 4, 39, 49, 246, DateTimeKind.Utc).AddTicks(3703),
+                            Image = "post/post-2-1.jpg",
+                            NumberLike = 0,
+                            Title = "Dàn máy mới",
+                            UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserId = 2
                         });
                 });
 
@@ -152,12 +203,23 @@ namespace DatingSocialApi.Migrations
                         {
                             Id = 1,
                             Avatar = "avatar/hung-avatar.jpg",
-                            CreatedDate = new DateTime(2022, 12, 6, 4, 17, 4, 430, DateTimeKind.Utc).AddTicks(3237),
+                            CreatedDate = new DateTime(2022, 12, 12, 4, 39, 49, 241, DateTimeKind.Utc).AddTicks(8312),
                             Name = "Đặng Văn Hùng",
                             Password = "77F0D4AB43AE59A407B18CEF6C56F7D0",
                             Role = "User",
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Username = "dangvanhung@gmail.com"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Avatar = "cuong-avatar.jpg",
+                            CreatedDate = new DateTime(2022, 12, 12, 4, 39, 49, 245, DateTimeKind.Utc).AddTicks(478),
+                            Name = "Nguyễn Đức Cường",
+                            Password = "55462DCE5979FA4B2221A5D3A8DFC0BD",
+                            Role = "User",
+                            UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Username = "nguyenduccuong@gmail.com"
                         });
                 });
 #pragma warning restore 612, 618

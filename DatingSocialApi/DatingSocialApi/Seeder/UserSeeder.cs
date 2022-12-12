@@ -26,6 +26,15 @@ namespace DatingSocialApi.Seeder
                     Password = Untill.CreateMD5("dangvanhung"),
                     Avatar = "avatar/hung-avatar.jpg",
                     Role = "User"
+                },
+                new User
+                {
+                    Id = 2,
+                    Name = "Nguyễn Đức Cường",
+                    Username = "nguyenduccuong@gmail.com",
+                    Password = Untill.CreateMD5("nguyenduccuong"),
+                    Avatar = "cuong-avatar.jpg",
+                    Role = "User"
                 }
                 );
         }
