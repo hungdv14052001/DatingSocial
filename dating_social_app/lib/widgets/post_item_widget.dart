@@ -87,9 +87,7 @@ class PostItemWidget extends StatelessWidget {
                     ),
                   ],
                 ),
-                Container(
-                  child: Icon(Icons.more_horiz),
-                ),
+                const Icon(Icons.more_horiz),
               ],
             ),
             const SizedBox(

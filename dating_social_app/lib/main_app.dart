@@ -1,3 +1,4 @@
+import 'package:dating_social_app/modules/account/views/account_page.dart';
 import 'package:dating_social_app/modules/authenticate/views/register_page.dart';
 import 'package:dating_social_app/modules/homepage/views/home_page.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +14,7 @@ class _MainApp extends State<MainApp> {
     HomePage(),
     HomePage(),
     HomePage(),
-    HomePage(),
+    AccountPage(),
   ];
   @override
   Widget build(BuildContext context) {
