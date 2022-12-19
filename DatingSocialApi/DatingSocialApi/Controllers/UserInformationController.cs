@@ -17,7 +17,6 @@ namespace DatingSocialApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [AllowAnonymous]
     public class UserInformationController : CustomerBaseController<UserInformationController>
     {
         private readonly UserInformationService _userInformationService;
@@ -32,11 +31,16 @@ namespace DatingSocialApi.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("GetProfile")]
-        public MessageData GetProfile(int userId)
+        public MessageData GetProfile(int? userId)
         {
             try
             {
-                var res = _userInformationService.GetProfile(userId);
+                var id = UserId;
+                if(userId != null)
+                {
+                    id = (int)userId;
+                }
+                var res = _userInformationService.GetProfile(id);
                 return new MessageData { Data = res };
             }
             catch (Exception ex)
@@ -51,11 +55,16 @@ namespace DatingSocialApi.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("GetPostListByUser")]
-        public MessageData GetPostListByUser(int userId)
+        public MessageData GetPostListByUser(int? userId)
         {
             try
             {
-                var res = _userInformationService.GetPostListByUser(userId);
+                var id = UserId;
+                if (userId != null)
+                {
+                    id = (int)userId;
+                }
+                var res = _userInformationService.GetPostListByUser(id);
                 return new MessageData { Data = res };
             }
             catch (Exception ex)
@@ -70,11 +79,16 @@ namespace DatingSocialApi.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("GetFriendList")]
-        public MessageData GetFriendList(int userId)
+        public MessageData GetFriendList(int? userId)
         {
             try
             {
-                var res = _userInformationService.GetFriendList(userId);
+                var id = UserId;
+                if (userId != null)
+                {
+                    id = (int)userId;
+                }
+                var res = _userInformationService.GetFriendList(id);
                 return new MessageData { Data = res };
             }
             catch (Exception ex)
