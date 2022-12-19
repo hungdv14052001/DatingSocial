@@ -1,7 +1,6 @@
 import 'package:dating_social_app/main_app.dart';
 import 'package:dating_social_app/models/user.dart';
 import 'package:dating_social_app/modules/authenticate/views/login_page.dart';
-import 'package:dating_social_app/modules/homepage/controllers/home_controller.dart';
 import 'package:dating_social_app/providers/mainProvider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
