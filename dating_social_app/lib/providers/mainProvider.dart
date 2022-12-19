@@ -16,7 +16,7 @@ class MainProvider {
       var token = await prefs.getString('token');
       // call api
       _dio.options.headers["Authorization"] = "Bearer ${token}";
-      var response = await _dio.get('${baseAPI}api/UserInformation/GetProfile?userId=1');
+      var response = await _dio.get('${baseAPI}api/User/GetProfile');
       var code = response.data["code"];
       if (code == 'Oke') {
         var data = response.data["data"];

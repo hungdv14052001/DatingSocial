@@ -45,11 +45,12 @@ class AuthenticateInput extends StatelessWidget {
         ],
       ),
       decoration: BoxDecoration(
-          color: backgroundColor ?? Colors.white,
-          borderRadius: BorderRadius.circular(5),
-          border: Border.all(
-            color: Colors.grey,
-          )),
+        color: backgroundColor ?? Colors.white,
+        borderRadius: BorderRadius.circular(5),
+        border: Border.all(
+          color: Colors.grey,
+        ),
+      ),
     );
   }
 }

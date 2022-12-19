@@ -1,6 +1,8 @@
 import 'package:dating_social_app/modules/account/views/account_page.dart';
 import 'package:dating_social_app/modules/authenticate/views/register_page.dart';
 import 'package:dating_social_app/modules/homepage/views/home_page.dart';
+import 'package:dating_social_app/modules/notify/views/notify_page.dart';
+import 'package:dating_social_app/modules/search/views/search_page.dart';
 import 'package:flutter/material.dart';
 
 class MainApp extends StatefulWidget {
@@ -12,8 +14,8 @@ class _MainApp extends State<MainApp> {
   int _selectedIndex = 0;
   List<Widget> pageList = <Widget>[
     HomePage(),
-    HomePage(),
-    HomePage(),
+    SearchPage(),
+    NotifyPage(),
     AccountPage(),
   ];
   @override
@@ -47,8 +49,8 @@ class _MainApp extends State<MainApp> {
           label: "Noitfy",
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.person),
-          label: "Profile",
+          icon: Icon(Icons.reorder),
+          label: "Account",
         ),
       ],
       selectedItemColor: const Color.fromRGBO(121, 27, 247, 1),

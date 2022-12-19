@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     const Text(
-                      'Dating Socail',
+                      'Dating Social',
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
@@ -38,11 +38,6 @@ class HomePage extends StatelessWidget {
                     Container(
                       height: 46,
                       width: 46,
-                      child: const Icon(
-                        Icons.reorder,
-                        size: 27,
-                        color: Colors.white,
-                      ),
                     ),
                   ],
                 ),
