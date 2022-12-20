@@ -1,5 +1,6 @@
 import 'package:dating_social_app/common/api/api_client.dart';
 import 'package:dating_social_app/models/post.dart';
+import 'package:dating_social_app/widgets/dialog_comment.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -145,10 +146,23 @@ class PostItemWidget extends StatelessWidget {
                 ),
                 Column(
                   children: [
-                    const Icon(
-                      Icons.chat,
-                      size: 25,
-                      color: Colors.grey,
+                    InkWell(
+                      onTap: () {
+                        showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return DialogComment(
+                                numberLike: post.numberLike!,
+                                postId: post.id!,
+                              );
+                            },
+                          );
+                      },
+                      child: const Icon(
+                        Icons.chat,
+                        size: 25,
+                        color: Colors.grey,
+                      ),
                     ),
                     Text(
                       post.numberLike!.toString(),

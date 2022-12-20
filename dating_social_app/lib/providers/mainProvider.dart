@@ -15,7 +15,7 @@ class MainProvider {
       final prefs = await SharedPreferences.getInstance();
       var token = await prefs.getString('token');
       // call api
-      _dio.options.headers["Authorization"] = "Bearer ${token}";
+      _dio.options.headers["Authorization"] = "Bearer $token";
       var response = await _dio.get('${baseAPI}api/UserInformation/GetProfile');
       var code = response.data["code"];
       if (code == 'Oke') {
